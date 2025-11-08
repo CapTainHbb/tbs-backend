@@ -13,6 +13,8 @@ import (
 )
 
 func TestCreateUser(t *testing.T) {
+	t.Parallel()
+
 	tests := []struct {
 		name          	string
 		input         	usecase.CreateUserRequest
@@ -122,6 +124,8 @@ func TestCreateUser(t *testing.T) {
 }
 
 func TestGetUser(t *testing.T) {
+	t.Parallel()
+
 	tests := []struct {
 		name      			string
 		input 				int
@@ -183,6 +187,8 @@ func TestGetUser(t *testing.T) {
 }
 
 func TestUpdateUser(t *testing.T) {
+	t.Parallel()
+
 	tests := []struct {
 		name     		string
 		input           usecase.UpdateUserRequest
@@ -282,6 +288,8 @@ func TestUpdateUser(t *testing.T) {
 }
 
 func TestDeleteUser(t *testing.T) {
+	t.Parallel()
+
 	tests := []struct {
 		name 			string
 		input       	int

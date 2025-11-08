@@ -18,6 +18,8 @@ import (
 
 
 func TestCreateProject(t *testing.T) {
+	t.Parallel()
+
 	tests := []struct {
 		name string
 		input usecase.CreateProjectRequest
@@ -105,6 +107,8 @@ func TestCreateProject(t *testing.T) {
 }
 
 func TestGetProject(t *testing.T) {
+	t.Parallel()
+
 	tests := []struct {
 		name string
 		input int
@@ -170,6 +174,8 @@ func TestGetProject(t *testing.T) {
 }
 
 func TestUpdateProject(t *testing.T) {
+	t.Parallel()
+
 	tests := []struct {
 		name string
 		input usecase.UpdateProjectRequest
@@ -258,6 +264,8 @@ func TestUpdateProject(t *testing.T) {
 }
 
 func TestDeleteProject(t *testing.T) {
+	t.Parallel()
+
 	tests := []struct {
 		name string
 		input int
